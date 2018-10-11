@@ -1,8 +1,23 @@
 .box {
-    float: left;
-    background-color: orange;
-    width: 31%;
-    padding-bottom: 31%;
-    border-radius: 5%;
-    margin: 1%;
-}
+  float: left;
+  background-color: orange;
+  width: 31%;
+  padding-bottom: 31%;
+  border-radius: 5%;
+  margin: 1%; }
+
+input {
+  float: left;
+  border: 1px solid orange;
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  background: transparent;
+  padding: 1rem;
+  cursor: pointer; }
+  input:hover {
+    color: white;
+    background-color: orange; }
+
+/*# sourceMappingURL=task1.css.map */
