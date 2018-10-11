@@ -43,14 +43,16 @@ function change() {
     //随机三个框配置随机颜色
 }
 var star;
-function startstar() {
-    star=window.setInterval(change,1000);//设置延时时间，自动重复变色
-}
-
 function stopstar() {
     window.clearInterval(star);//停止变色
     defaultcolor();//恢复默认颜色
 }
+function startstar() {
+    stopstar();//每次点击前情况之前的计时器，否则会一直叠加计时器
+    star=window.setInterval(change,1000);//设置延时时间，自动重复变色
+}
+
+
 
 
 
