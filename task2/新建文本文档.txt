@@ -1,0 +1,14 @@
+._1{height:13px;width:15px;background-position:0 0;}
+.Back{height:40px;width:24px;background-position:0 -14px;}
+.next{height:56px;width:28px;background-position:0 -55px;}
+.fond{height:30px;width:30px;background-position:0 -112px;}
+.knife{height:30px;width:30px;background-position:0 -142px;}
+.shoot{height:30px;width:30px;background-position:0 -172px;}
+.doctor{height:30px;width:30px;background-position:0 -204px;}
+._2{height:27px;width:34px;background-position:0 -235px;}
+.delete{height:36px;width:36px;background-position:0 -265px;}
+.game{height:40px;width:39px;background-position:0 -303px;}
+.result{height:40px;width:40px;background-position:0 -344px;}
+.home{height:42px;width:51px;background-position:0 -386px;}
+.play{height:52px;width:52px;background-position:0 -430px;}
+._3{height:16px;width:93px;background-position:0 -483px;}

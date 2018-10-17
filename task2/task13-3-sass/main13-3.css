@@ -1,0 +1,140 @@
+html {
+  font-size: 62.5%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto; }
+
+body {
+  background-color: #f0f0f0;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto; }
+
+.main-p3 {
+  background-color: #5fc0cd;
+  border-top: 1px #ffffff solid; }
+  .main-p3 .empty1 {
+    padding-bottom: 2rem; }
+  .main-p3 .winner {
+    background: #5fc0cd url(../image/winner.png) no-repeat center center;
+    height: 19.2rem;
+    line-height: 30rem;
+    position: relative;
+    text-align: center;
+    font-size: 4.125rem;
+    color: #ffffff; }
+  .main-p3 .great {
+    background-color: #5fc0cd;
+    width: 80%;
+    font-size: 3.3rem;
+    line-height: 3.3rem;
+    color: #ffc865;
+    margin-left: 10%;
+    margin-top: 2rem; }
+  .main-p3 .data-p3 {
+    width: 80%;
+    font-size: 2.17rem;
+    line-height: 3rem;
+    color: #ffffff;
+    margin-left: 10%;
+    margin-top: 4rem;
+    padding-bottom: 2rem; }
+    .main-p3 .data-p3 .intro {
+      margin-right: 3rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-break: keep-all; }
+  @media screen and (max-width: 640px) {
+    .main-p3 .winner {
+      background-size: contain;
+      height: 10rem;
+      line-height: 16rem;
+      font-size: 2.3rem; }
+    .main-p3 .great {
+      font-size: 1.65rem;
+      line-height: 2rem; }
+    .main-p3 .data-p3 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-top: 2rem;
+      padding-bottom: 1rem; } }
+
+.day-1, .day-2 {
+  border-bottom: 1px #5d5d5d solid; }
+  .day-1 .day-box, .day-2 .day-box {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1rem; }
+    .day-1 .day-box .day-number, .day-2 .day-box .day-number {
+      font-size: 3rem;
+      color: #5d5d5d; }
+    .day-1 .day-box .time, .day-2 .day-box .time {
+      float: right;
+      margin-top: 1rem;
+      margin-right: 2rem;
+      font-size: 2rem;
+      color: #9a9a9a; }
+  .day-1 .nightsun, .day-2 .nightsun {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #9a9a9a; }
+  @media screen and (max-width: 640px) {
+    .day-1 .day-box, .day-2 .day-box {
+      margin-top: 0.5rem; }
+      .day-1 .day-box .day-number, .day-2 .day-box .day-number {
+        font-size: 1.5rem; }
+      .day-1 .day-box .time, .day-2 .day-box .time {
+        margin-top: 0.5rem;
+        font-size: 1.5rem; }
+    .day-1 .nightsun, .day-2 .nightsun {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      line-height: 2rem; } }
+
+.day-2 {
+  margin-bottom: 10rem; }
+  @media screen and (max-width: 640px) {
+    .day-2 {
+      margin-bottom: 5rem; } }
+
+.bottom-p3 {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  max-width: 760px;
+  min-width: 320px; }
+  .bottom-p3 .bottom-p3-left {
+    float: left;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: #29bde0;
+    margin-left: 5%; }
+  .bottom-p3 .bottom-p3-right {
+    float: right;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: #29bde0;
+    margin-right: 5%; }
+  @media screen and (max-width: 640px) {
+    .bottom-p3 .bottom-p3-left {
+      float: left;
+      margin-top: 0rem;
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+      color: #29bde0; }
+    .bottom-p3 .bottom-p3-right {
+      float: right;
+      margin-top: 0rem;
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+      color: #29bde0; } }
+
+/*# sourceMappingURL=main13-3.css.map */

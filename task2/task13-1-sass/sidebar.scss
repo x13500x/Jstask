@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import "../var";
+
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60px;
+  height: 60px;
+  transition: transform 250ms ease;
+  cursor: pointer;
+  z-index: 200;
+
+  span {
+    position: relative;
+    display: block;
+    width: 60%;
+    height: 4px;
+    margin-bottom: 2px;
+    background-color: $white-color;
+    float: left;
+    transform-origin: center center;
+    transition: transform 250ms ease;
+    z-index: 200;
+    &:nth-of-type(1) {
+      transform: translateY(-5px);
+    }
+    &:nth-of-type(3) {
+      transform: translateY(5px);
+    }
+  }
+  @media screen and (max-width: 640px) {
+    top: 8px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    span{
+      height: 3px;
+      margin-bottom: 1px;
+    }
+  }
+}
+#menu {
+  display: none;
+  &:checked ~ .menu {
+    display:block;
+    left:0;
+    background-color: transparent;
+    transform: rotate(360deg);
+    transition: transform 250ms ease;
+  }
+  &:checked ~ .menu span {
+    background-color: white;
+    transition: transform 250ms ease;
+  }
+  &:checked ~ .nav {
+    display:block;
+    left: 0;
+    transition: left 500ms ease;
+  }
+  &:checked ~ .main-all {
+    transform: translateX(60%);
+    transition: transform 500ms ease;
+  }
+}
+.nav {
+  display:none;
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 60%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: $white-color;
+  transition: left 500ms ease;
+  z-index: 0;
+  ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid $border-color;
+    .side{
+      float: left;
+      margin-top:1rem;
+     margin-left: 1rem;
+    }
+    .step{
+      float: right;
+      margin-top: -3.5rem;
+      margin-right: 2rem;
+    }
+    a {
+      position: relative;
+      display: block;
+      margin: 0 5rem;
+      padding: 20px 0;
+      color: $blue-color;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        transition: width 250ms ease;
+        z-index: -1;
+      }
+      &:hover {
+        color: #444;
+      }
+      &:hover:before {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        transition: width 250ms ease;
+      }
+    }
+  }
+}

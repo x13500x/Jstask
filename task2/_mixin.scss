@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import "var";
+
+html{
+  font-size: 62.5%;
+  max-width:640px;
+  min-width:320px;
+  margin:0 auto;
+}
+body{
+  background-color: #f0f0f0;
+  max-width:640px;
+  min-width:320px;
+  margin:0 auto;
+}
+@mixin flex1{
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+@mixin rounded-corners($radius){
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin button ($top,$width,$height){
+  background-size: cover;
+  position: absolute;
+  top: $top;
+  width: $width;
+  height: $height;
+  outline: none;
+  border: none;
+}
+
+@mixin circle($color1,$width,$height,$mr,$color2){
+  border-radius: 50%;
+  background-color: $color1;
+  width: $width;
+  height: $height;
+  margin-right: $mr;
+  display: inline-block;
+  &:hover{
+    background-color: $color2;
+  }
+}
+@mixin box-p2($top){
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top:$top;
+  &::before,&::after{
+    content: "";
+    display: block;
+  }
+}
+@mixin pic{
+  background-size: cover;
+  width: 20%;
+  height: 0;
+  padding-bottom: 20%
+}
+@mixin header-center ($size,$lh){
+  font-size: $size;
+  color: $white-color;
+  line-height: $lh;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@mixin footer-p3-rl ($color){
+  @include rounded-corners(10px);
+  width: 42%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+  background-color: $color;
+}
+%onemore-share{
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  outline: none;
+  font-size: 2rem;
+  color: $white-color;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: keep-all;
+  text-decoration: none;
+}
+@mixin day-time($float,$top,$bottom,$size,$color){
+  float: $float;
+  margin-top: $top;
+  margin-bottom: $bottom;
+  font-size: $size;
+  color: $color;
+}

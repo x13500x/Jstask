@@ -1,0 +1,153 @@
+@charset "utf-8";
+@import "../var";
+@import "../mixin";
+.max{
+  position: relative;
+  overflow: hidden;
+}
+.header{
+  .button1{
+    background: url(../image/2.png);
+    @include button(3.5rem,3.4rem,2.7rem);
+    left:1.5rem;
+    @media screen and (max-width: 640px){
+      @include button(1.75rem,1.7rem,1.35rem);
+      left:1rem;
+    }
+  }
+}
+.main {
+  background-color: $greywhite-color;
+  padding-bottom: 2rem;
+  padding-top: 1.75rem;
+  .box1{
+    position:relative;
+    border: 1px solid $border-color;
+    background-color: $white-color;
+    margin: 0 auto 1.75rem;
+    width: 90%;
+    vertical-align: middle;
+    text-align: center;
+    height: 8rem;
+    .last {
+      font-size: 3rem;
+      color: $grey-color;
+      line-height: 8rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .button2{
+      background: url(../image/return.png);
+      @include button(2.9rem,1.8rem,3rem);
+      right:7%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .main-bottom {
+    position: relative;
+    margin: 1rem auto;
+    width: 90%;
+    border: 1px solid $border-color;
+    text-align: center;
+    background-color: $white-color;
+    .button4{
+      background: url(../image/next.png);
+      @include button(30rem,2.8rem,5.6rem);
+      right:2%;
+    }
+    .box2 {
+      border-bottom: 1px solid $yellow-color;
+      margin: 1rem auto;
+      vertical-align: middle;
+      text-align: center;
+      height: 9rem;
+      .game {
+        font-size: 3.5rem;
+        color: $yellow-color;
+        line-height: 9rem;
+      }
+    }
+    .box3 {
+      border: none;
+      background-color: $blue-color;
+      margin: 2rem auto;
+      width: 80%;
+      vertical-align: middle;
+      .button3{
+        outline: none;
+        border: none;
+        height: 10rem;
+        font-size: 3rem;
+        color: $white-color;
+        background-color: transparent;
+      }
+    }
+    .data {
+      font-size: 2rem;
+      color: $grey-color;
+      margin: 0 auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .bottom {
+      height: 18px;
+      margin: 0.5rem auto;
+      .circle1{
+        @include circle($blue-color,1.5rem,1.5rem,1rem,$blue-color)
+      }
+      .circle2{
+        @include circle($greywhite-color,1.5rem,1.5rem,1rem,$blue-color)
+      }
+    }
+  }
+  @media screen and (max-width: 640px){
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    .box1{
+      height: 5rem;
+      .last{
+        font-size: 2rem;
+        line-height: 5rem;
+      }
+      .button2{
+        @include button(1.8rem,0.9rem,1.5rem);
+      }
+    }
+    .main-bottom{
+      .button4{
+        @include button(15.3rem,1.4rem,2.8rem);
+      }
+      .box2{
+        margin: 0.5rem auto;
+        height: 4.5rem;
+        .game{
+          font-size: 1.75rem;
+          line-height: 4.5rem;
+        }
+      }
+      .box3{
+        margin: 1rem auto;
+        .button3{
+          height: 5rem;
+          font-size: 1.5rem;
+        }
+      }
+      .data{
+        font-size: 1rem;
+      }
+      .bottom{
+        margin: 0.3rem auto;
+        .circle1{
+          @include circle($blue-color,0.75rem,0.75rem,0.5rem,$blue-color)
+        }
+        .circle2{
+          @include circle($greywhite-color,0.75rem,0.75rem,0.5rem,$blue-color)
+        }
+      }
+    }
+  }
+}

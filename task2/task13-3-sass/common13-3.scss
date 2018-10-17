@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import "../var";
+@import "../mixin";
+
+.header {
+  position:relative;
+  background-color:$deepblue-color;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 8.8rem;
+  .button-p3-1{
+    background: url(../image/home.png);
+    @include button(2.8rem,51px,42px);
+    left: 1.5rem;
+  }
+  .header-center{
+    @include header-center(3.4rem,8.8rem);
+  }
+  .button-p3-2{
+    background: url(../image/result.png);
+    @include button(3rem,40px,40px);
+    right:1.5rem;
+  }
+  @media screen and (max-width: 640px){
+    height: 4.4rem;
+    .button-p3-1{
+      @include button(1.4rem,2.5rem,2rem);
+      left: 0.75rem;
+    }
+    .header-center{
+      @include header-center(1.7rem,4.4rem);
+    }
+    .button-p3-2{
+      @include button(1.5rem,2rem,2rem);
+      right:0.75rem;
+    }
+  }
+}
+.footer-p3 {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  color: $white-color;
+  max-width:760px;
+  min-width:320px;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $lightblue-color;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  &:before,&:after{
+    content: "";
+    display: block;
+  }
+  .footer-p3-left{
+    @include footer-p3-rl($red-color);
+    .onemore {
+    @extend %onemore-share;
+  }
+  }
+  .footer-p3-right{
+    @include footer-p3-rl($yellow-color);
+    .share {
+     @extend %onemore-share;
+    }
+  }
+  @media screen and (max-width: 640px){
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+}
