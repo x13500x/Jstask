@@ -26,7 +26,7 @@ for(var u=0;u<killer;u++){
 for(var j=0;j<citizen;j++){
     sum.push("平民");
 }
-console.log(sum)
+console.log(sum);
 //玩家乱序
 var neworder=[];
 function disorder() {
@@ -52,15 +52,17 @@ function check() {
     console.log(player);//玩家数量
     console.log(neworder.length);//玩家数量
     if(openbottom.style.display==="none"){//翻开身份后
-        openbottom.style.display="block";//变成待翻开身份状态
-        opentop.style.display="none";//身份隐藏
-        var num1=i + 1;//num1是局部变量
-        order.innerHTML=num1;
-        console.log(i);
-        console.log("查看"+num1+"号身份");
-        view.innerHTML="查看"+num1+"号身份";
         if(i===neworder.length){//所有身份查看后，法官进入法官页面
             window.location.href="task13-2.html";
+        }
+        else{
+            openbottom.style.display="block";//变成待翻开身份状态
+            opentop.style.display="none";//身份隐藏
+            var num1=i + 1;//num1是局部变量
+            order.innerHTML=num1;
+            console.log(i);
+            console.log("查看"+num1+"号身份");
+            view.innerHTML="查看"+num1+"号身份";
         }
     }
     else {//翻开身份前
@@ -69,12 +71,14 @@ function check() {
         identify.innerHTML=neworder[i];
         i++;
         order.innerHTML=i;
-        var num=i + 1;//num是局部变量
         console.log(i+"号身份");
-        console.log("隐藏并传递给"+num+"号");
-        view.innerHTML="隐藏并传递给"+num+"号";
         if(i===neworder.length){//翻开最后一个玩家身份后，给法官
             view.innerHTML="递给法官查看";
+        }
+        else{
+            var num=i + 1;//num是局部变量
+            console.log("隐藏并传递给"+num+"号");
+            view.innerHTML="隐藏并传递给"+num+"号";
         }
     }
 }
