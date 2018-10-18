@@ -41,6 +41,8 @@ function disorder() {
 }
 disorder();//执行乱序，形成乱序数组
 console.log(neworder);
+var neworder1=JSON.stringify(neworder);//数组转换为JSON对象才能存储
+sessionStorage.setItem("player_order",neworder1);//存储转换后的JSON数组数据
 //轮流翻看身份
 var view=document.getElementsByClassName("check-order")[0];//下方按钮
 var order=document.getElementsByClassName("order")[0];//上方玩家序号
@@ -53,7 +55,7 @@ function check() {
     console.log(neworder.length);//玩家数量
     if(openbottom.style.display==="none"){//翻开身份后
         if(i===neworder.length){//所有身份查看后，法官进入法官页面
-            window.location.href="task13-2.html";
+            window.location.href="task2-1-3.html";
         }
         else{
             openbottom.style.display="block";//变成待翻开身份状态

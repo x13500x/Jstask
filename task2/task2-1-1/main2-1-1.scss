@@ -24,7 +24,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
   div:nth-child(2){
     width: 90%;
-    height: 10rem;
+    height: 13rem;
     margin: 1rem auto;
     background-color: $white-color;
     text-align: center;
@@ -71,15 +71,16 @@ input[type=number]::-webkit-outer-spin-button {
     height: 10rem;
     width: 90%;
     background-color: $white-color;
-    margin: 1rem auto;
+    margin: 1rem auto 8rem;
     .allnum{
       padding-top: 2rem;
+      text-align: center;
       input{
         width: 30px;
         background-color: #f0f0f0;
       }
       span:nth-child(1){
-        margin-left: 4rem;
+
       }
       span:nth-child(3){
         color: $yellow-color;
@@ -97,8 +98,8 @@ input[type=number]::-webkit-outer-spin-button {
     margin: auto;
     transform: scale(1,1);
     width: 90%;
-    height: 80px;
-    line-height: 80px;
+    height: 5rem;
+    line-height: 5rem;
     text-align: center;
     background-color: $yellow-color;
     a{

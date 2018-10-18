@@ -27,7 +27,7 @@ dl,ul,ol,menu,li {list-style:none}   /* 重置类表前导符号为onne,menu在H
 blockquote, q {quotes: none}   /* 重置嵌套引用的引号类型 */
 blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}  /* 重置嵌套引用*/
 input,select,textarea,button {vertical-align:middle}  /* 重置表单控件垂直居中*/
-button {border:0 none;background-color:transparent;cursor:pointer}  /* 重置表单button按钮效果 */
+button {border:0 none;background-color:transparent;cursor:pointer;outline: 0;}  /* 重置表单button按钮效果 */
 body {background:#fff;}   /* 重置body 页面背景为白色 */
 body,th,td,input,select,textarea,button {line-height:1;font-family:"微软雅黑", "黑体","宋体";color:#666;} /* 重置页面文字属性 */
 a {color:#666;text-decoration:none}  /* 重置链接a标签 */
