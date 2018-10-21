@@ -44,3 +44,6 @@ function plaer_box() {
     }
 }
 plaer_box();
+function start_game() {
+    window.location.href="task2-1-4.html";
+}

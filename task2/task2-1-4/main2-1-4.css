@@ -1,0 +1,119 @@
+html {
+  font-size: 62.5%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto; }
+
+body {
+  background-color: #f0f0f0;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto; }
+
+.main-all {
+  font-size: 1.55rem; }
+
+.main-center {
+  margin-bottom: 6rem; }
+
+.day {
+  height: 3rem;
+  line-height: 3rem;
+  width: 95%;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 1rem auto;
+  border: 1px solid #c9c9c9; }
+
+.game_log {
+  position: relative;
+  border: 1px solid #c9c9c9;
+  width: 95%;
+  margin: 0 auto;
+  background-color: #ffffff; }
+  .game_log .in {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-bottom: 20px solid #ffffff;
+    top: -18px;
+    margin-left: -18px;
+    left: 50%; }
+  .game_log .kill {
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+    .game_log .kill::before {
+      position: absolute;
+      left: 3rem;
+      content: "";
+      display: inline-block;
+      width: 3px;
+      height: 100%;
+      background-color: #c9c9c9; }
+    .game_log .kill .dead {
+      padding-left: 6rem; }
+    .game_log .kill .step {
+      position: relative;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      text-align: center;
+      width: 100%;
+      color: #ffffff;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding-left: 6rem;
+      padding-right: 2rem; }
+      .game_log .kill .step .day_night {
+        position: absolute;
+        left: 1.8rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: #ffffff;
+        border: 1px solid #c9c9c9;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%; }
+      .game_log .kill .step .step1, .game_log .kill .step .step2, .game_log .kill .step .step3, .game_log .kill .step .step4 {
+        background-color: #5fc0cd;
+        position: relative; }
+        .game_log .kill .step .step1 .tri, .game_log .kill .step .step2 .tri, .game_log .kill .step .step3 .tri, .game_log .kill .step .step4 .tri {
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: 8px dashed #ffffff;
+          border-bottom: 8px dashed #ffffff;
+          border-right: 16px solid #5fc0cd;
+          top: 7px;
+          left: -16px;
+          margin: 0; }
+
+.bottom {
+  background-color: #29bde0;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  height: 5rem;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around; }
+  .bottom div {
+    max-width: 640px;
+    width: 35%;
+    height: 3rem;
+    line-height: 2.5rem;
+    text-align: center;
+    margin: auto;
+    background-color: #fbb435;
+    color: #ffffff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+    .bottom div button {
+      font-size: 2rem;
+      color: #ffffff; }
+
+/*# sourceMappingURL=main2-1-4.css.map */
