@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import "../var";
+@import "../mixin";
+body{
+  background-color: $blue-color;
+  font-size: $fontSize - 0.3;
+}
+.open-eyes{
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #5fc0cd;
+  padding-left: 2rem;
+  position: relative;
+  &::after{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 15px solid #5fc0cd;
+    position: absolute;
+    bottom: -15px;
+    left: 3rem;
+  }
+}
+.kill-mark{
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  padding-left: 3rem;
+  margin: 0.5rem auto;
+  color: $white-color;
+  font-size: $fontSize - 0.4;
+}
+.main-center{
+  width: 100%;
+  margin: 0 auto 10rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .gamer {
+    width: 33.3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    .player{
+      display: inline-block;
+      border: 1vw solid $white-color;
+      text-align: center;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      .status {
+        font-size: $fontSize - 0.2;
+        color: $dark-color;
+        width: 24vw;
+        height: 20vw;
+        line-height: 20vw;
+        background-color: $yellow-color;
+      }
+      .number {
+        font-size: $fontSize - 0.3;
+        color: $white-color;
+        background-color: $deepblue-color;
+        width: 24vw;
+        height: 4vw;
+        line-height: 4vw;
+      }
+    }
+    ul{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      visibility: hidden;
+      li{
+        background: url("image/knife.png");
+        width: 30px;
+        height: 30px;
+        margin-top: 0.3rem;
+      }
+    }
+  }
+}
+.bottom{
+  background-color: $blue-color;
+  width: 100%;
+  height: 10rem;
+  position: fixed;
+  bottom: 0;
+}
+.bottom-center{
+  max-width: 640px;
+  width: 90%;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 3rem;
+  transform: scale(1,1);
+  margin:auto;
+  background-color: $yellow-color;
+  color: $white-color;
+  button{
+    font-size: 3rem;
+    color: $white-color;
+  }
+}

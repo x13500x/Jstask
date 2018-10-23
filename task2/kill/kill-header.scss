@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import "../var";
+
+.header {
+  position:relative;
+  background-color: $blue-color;
+  overflow: hidden;
+  max-width: 640px;
+  margin: 0 auto;
+  height: 8.8rem;
+  border-bottom: 1px solid $border-color;
+  text-align: center;
+  line-height: 8.8rem;
+  font-size: $fontSize + 0.4;
+  color: $white-color;
+  a:nth-child(2){
+    img{
+      position: absolute;
+      top: 2.5rem;
+      right: 2rem;
+    }
+  }
+  @media screen and (max-width: 640px){
+    height: 4.4rem;
+    line-height: 4.4rem;
+    a:nth-child(2){
+      img{
+        top: 1rem;
+        width: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css"  href="kill/kill-header.css" />
+    <link rel="stylesheet" type="text/css"  href="kill/kill.css" />
+    <title>投票</title>
+</head>
+<body>
+<div class="header">
+    <span>投票</span>
+    <a onclick="cancel()">
+        <img src="role-confirm/image/close_03.png">
+    </a>
+</div>
+<div class="open-eyes">请大家投票</div>
+<div class="kill-mark">发言结束，大家请投票</div>
+<div class="main-center">
+    <div class="gamer" id="role1">
+        <div class="player">
+            <p class="status">平民</p>
+            <p class="number">1号</p>
+        </div>
+        <ul class="select">
+            <li class="icon1"></li>
+        </ul>
+    </div>
+</div>
+<div class="bottom">
+    <div class="bottom-center">
+        <button onclick="kill()" class="ok">确定</button>
+    </div>
+</div>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="kill/kill.js"></script>
+</body>
+</html>

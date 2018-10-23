@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+  background-color: #29bde0;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 8.8rem; }
+  .header img {
+    position: absolute;
+    top: 2.5rem;
+    left: 2rem; }
+  @media screen and (max-width: 640px) {
+    .header {
+      height: 4.4rem; }
+      .header img {
+        top: 1rem;
+        left: 1rem;
+        width: 18px; } }
+
+/*# sourceMappingURL=header-common.css.mapap */

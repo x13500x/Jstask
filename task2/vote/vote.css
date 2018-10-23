@@ -1,0 +1,151 @@
+html {
+  font-size: 62.5%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto; }
+
+body {
+  background-color: #f0f0f0;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto; }
+
+.header {
+  position: relative;
+  background-color: #29bde0;
+  overflow: hidden;
+  max-width: 640px;
+  margin: 0 auto;
+  height: 8.8rem;
+  border-bottom: 1px solid #c9c9c9;
+  text-align: center;
+  line-height: 8.8rem;
+  font-size: 2.15rem;
+  color: #ffffff; }
+  .header a:nth-child(2) img {
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem; }
+  @media screen and (max-width: 640px) {
+    .header {
+      height: 4.4rem;
+      line-height: 4.4rem; }
+      .header a:nth-child(2) img {
+        top: 1rem;
+        width: 24px; } }
+
+html {
+  font-size: 62.5%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto; }
+
+body {
+  background-color: #f0f0f0;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto; }
+
+body {
+  background-color: #29bde0;
+  font-size: 1.45rem; }
+
+.open-eyes {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #5fc0cd;
+  padding-left: 2rem;
+  position: relative; }
+  .open-eyes::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 15px solid #5fc0cd;
+    position: absolute;
+    bottom: -15px;
+    left: 3rem; }
+
+.kill-mark {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  padding-left: 3rem;
+  margin: 0.5rem auto;
+  color: #ffffff;
+  font-size: 1.35rem; }
+
+.main-center {
+  width: 100%;
+  margin: 0 auto 10rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  .main-center .gamer {
+    width: 33.3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem; }
+    .main-center .gamer .player {
+      display: inline-block;
+      border: 1vw solid #ffffff;
+      text-align: center;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+      .main-center .gamer .player .status {
+        font-size: 1.55rem;
+        color: #5d5d5d;
+        width: 24vw;
+        height: 20vw;
+        line-height: 20vw;
+        background-color: #fbb435; }
+      .main-center .gamer .player .number {
+        font-size: 1.45rem;
+        color: #ffffff;
+        background-color: #5fc0cd;
+        width: 24vw;
+        height: 4vw;
+        line-height: 4vw; }
+    .main-center .gamer ul {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      visibility: hidden; }
+      .main-center .gamer ul li {
+        background: url("image/knife.png");
+        width: 30px;
+        height: 30px;
+        margin-top: 0.3rem; }
+
+.bottom {
+  background-color: #29bde0;
+  width: 100%;
+  height: 10rem;
+  position: fixed;
+  bottom: 0; }
+
+.bottom-center {
+  max-width: 640px;
+  width: 90%;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 3rem;
+  transform: scale(1, 1);
+  margin: auto;
+  background-color: #fbb435;
+  color: #ffffff; }
+  .bottom-center button {
+    font-size: 3rem;
+    color: #ffffff; }
+
+/*# sourceMappingURL=vote.css.map */

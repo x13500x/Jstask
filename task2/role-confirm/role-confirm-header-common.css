@@ -1,0 +1,32 @@
+.header {
+  position: relative;
+  background-color: #29bde0;
+  overflow: hidden;
+  max-width: 640px;
+  margin: 0 auto;
+  height: 8.8rem;
+  border-bottom: 1px solid #c9c9c9;
+  text-align: center;
+  line-height: 8.8rem;
+  font-size: 2.15rem;
+  color: #ffffff; }
+  .header a:nth-child(1) img {
+    position: absolute;
+    top: 2.5rem;
+    left: 2rem; }
+  .header a:nth-child(3) img {
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem; }
+  @media screen and (max-width: 640px) {
+    .header {
+      height: 4.4rem;
+      line-height: 4.4rem; }
+      .header a:nth-child(1) img {
+        top: 1rem;
+        width: 18px; }
+      .header a:nth-child(3) img {
+        top: 1rem;
+        width: 24px; } }
+
+/*# sourceMappingURL=game-process-header-common.css.map-common.css.map */

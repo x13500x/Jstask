@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css"  href="game-process/game-process-header-common.css" />
+    <link rel="stylesheet" type="text/css"  href="game-process/game-process.css" />
+    <title>法官台本</title>
+</head>
+<body>
+    <div class="header">
+        <a onclick="back()">
+            <img src="role-assign/image/back.png">
+        </a>
+        <span>法官台本</span>
+        <a onclick="cancel()">
+            <img src="role-confirm/image/close_03.png">
+        </a>
+    </div>
+    <div class="main-center">
+        <div class="day_day" id="day1">
+            <div class="day">
+                第<span class="day_num">一</span>天
+            </div>
+            <div class="game_log">
+                <div class="in"></div>
+                <div class="kill">
+                    <div class="step">
+                        <div class="day_night">
+                            <img class="moon" src="game-process/image/moon.png">
+                        </div>
+                        <div class="step1">
+                            杀手杀人
+                            <div class="tri"></div>
+                        </div>
+                    </div>
+                    <p class="dead"></p>
+                    <div class="step">
+                        <div class="day_night">
+                            <img class="sun" src="game-process/image/sun.png">
+                        </div>
+                        <div class="step2">
+                            亡灵发表遗言
+                            <div class="tri"></div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step3">
+                            玩家依次发言
+                            <div class="tri"></div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step4">
+                            全民投票
+                            <div class="tri"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="game_over">
+            <button onclick="check()" class="game_over_bt">结束游戏</button>
+        </div>
+        <div class="diary">
+            <button onclick="check()" class="diary_bt">法官日志</button>
+        </div>
+    </div>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="game-process/game-process.js"></script>
+</body>
+</html>
