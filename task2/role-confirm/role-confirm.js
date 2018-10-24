@@ -8,13 +8,14 @@ console.log(citizen);
 console.log(player);
 //退回主页
 function cancel() {
-    if(confirm("确认退出吗？")===true){
+    if(confirm("确认退出该局游戏并回到游戏首页吗？")===true){
+        sessionStorage.clear();
         window.location.href="homepage.html";
     }
 }
 //返回上一页
 function back() {
-    if(confirm("确认退出吗？")===true){
+    if(confirm("确认返回上一页吗？")===true){
        window.history.go(-1);
     }
 }

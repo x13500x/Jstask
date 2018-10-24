@@ -94,7 +94,7 @@ body {
   position: fixed;
   bottom: 0; }
 
-.bottom-center {
+.ok {
   max-width: 640px;
   width: 90%;
   height: 4rem;
@@ -107,9 +107,7 @@ body {
   transform: scale(1, 1);
   margin: auto;
   background-color: #fbb435;
+  font-size: 3rem;
   color: #ffffff; }
-  .bottom-center button {
-    font-size: 3rem;
-    color: #ffffff; }
 
 /*# sourceMappingURL=kill.css.map */

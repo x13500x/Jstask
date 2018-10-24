@@ -92,7 +92,7 @@ body{
   position: fixed;
   bottom: 0;
 }
-.bottom-center{
+.ok{
   max-width: 640px;
   width: 90%;
   height: 4rem;
@@ -105,9 +105,6 @@ body{
   transform: scale(1,1);
   margin:auto;
   background-color: $yellow-color;
+  font-size: 3rem;
   color: $white-color;
-  button{
-    font-size: 3rem;
-    color: $white-color;
-  }
 }
