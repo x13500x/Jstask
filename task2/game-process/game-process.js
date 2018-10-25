@@ -13,6 +13,20 @@ console.log(player);
 console.log(player_order1);//此时显示的是字符串
 console.log(player_order);//数组
 console.log(playerLife);
+var day = ~~sessionStorage.getItem("day");//获取天数
+if (day === 0){
+    day = 1;
+}//如果之前没有天数，则定为第一天
+sessionStorage.setItem("day",day);//储存第一天天数
+console.log(day);
+var dayArray=["一","二","三","四","五","六","七","八","九","十"];
+for(var i = 1;i<day;i++){
+    var id = "#day" + (i+1);
+    $("#day1").clone().attr("id","day" + (i+1)).appendTo("div.main-center");
+    $(id).find("span.day_num").text(dayArray[i]);
+}
+
+
 function cancel() {
     if(confirm("确认退出该局游戏并回到游戏首页吗？")===true){
         sessionStorage.clear();

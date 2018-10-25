@@ -1,6 +1,7 @@
 var killer=Number(sessionStorage.getItem("killer"));
 var citizen=Number(sessionStorage.getItem("citizen"));
 var player=Number(sessionStorage.getItem("player"));
+var day=Number(sessionStorage.getItem("day"));
 //获取玩家人数
 var player_order1=sessionStorage.getItem("player_order");//获取玩家序号数组，取出时是JSON字符串（string）类型
 var player_order=JSON.parse(player_order1);//JSON字符串转换为数组对象
@@ -8,6 +9,7 @@ var player_order=JSON.parse(player_order1);//JSON字符串转换为数组对象
 console.log(killer);
 console.log(citizen);
 console.log(player);
+console.log(day);
 console.log(player_order1);//此时显示的是字符串
 console.log(player_order);//数组
 
@@ -92,6 +94,8 @@ $(function () {
                 window.location.href="task13-3.html";
             }
             else {
+                day += 1;
+                sessionStorage.setItem("day",day);
                 window.location.href="game-process.html";
             }
         }
