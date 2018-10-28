@@ -78,10 +78,10 @@ body {
         display: flex;
         justify-content: center;
         align-items: center; }
-      .game_log .kill .step .step1, .game_log .kill .step .step2, .game_log .kill .step .step3, .game_log .kill .step .step4 {
+      .game_log .kill .step .step0 {
         background-color: #5fc0cd;
         position: relative; }
-        .game_log .kill .step .step1 .tri, .game_log .kill .step .step2 .tri, .game_log .kill .step .step3 .tri, .game_log .kill .step .step4 .tri {
+        .game_log .kill .step .step0 .tri {
           position: absolute;
           width: 0;
           height: 0;
@@ -124,4 +124,4 @@ body {
       font-size: 2rem;
       color: #ffffff; }
 
-/*# sourceMappingURL=game-process.csscss.map */
+/*# sourceMappingURL=game-process.css.map */
