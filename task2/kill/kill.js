@@ -79,7 +79,7 @@ $(function () {
             console.log(playerLife);
             sessionStorage.setItem("choose",choosePlayer);
             if (citizen === killer){
-                window.location.href="task13-3.html";
+                window.location.href="result.html";
             }
             else {
                 window.location.href="game-process.html";

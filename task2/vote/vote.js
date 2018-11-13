@@ -35,13 +35,14 @@ if (sessionStorage.getItem("killDead")){
 } else {
     killDead = [];
 }
+console.log(killDead);
 var voteDead;
 if (sessionStorage.getItem("voteDead")){
     voteDead = JSON.parse(sessionStorage.getItem("voteDead"))
 } else {
     voteDead = [];
 }
-
+console.log(voteDead);
 
 $(function () {
     for (var i=2;i<=player_order.length;i++){
@@ -75,7 +76,7 @@ $(function () {
             playerLife[choosePlayer]="死亡";
             var temp = (choosePlayer + 1) + "号玩家被投死，其真实身份是" + player_order[choosePlayer];
             voteDead.push(temp);
-            sessionStorage.setItem("killDead",JSON.stringify(voteDead));
+            sessionStorage.setItem("voteDead",JSON.stringify(voteDead));
             console.log(voteDead);
             if (player_order[choosePlayer]==="杀手"){
                 killer = killer - 1;
@@ -91,7 +92,7 @@ $(function () {
             console.log(playerLife);
             sessionStorage.setItem("choose",choosePlayer);
             if (citizen === killer||killer===0){
-                window.location.href="task13-3.html";
+                window.location.href="result.html";
             }
             else {
                 day += 1;

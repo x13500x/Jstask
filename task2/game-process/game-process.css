@@ -52,7 +52,7 @@ body {
       width: 3px;
       height: 100%;
       background-color: #c9c9c9; }
-    .game_log .kill .dead {
+    .game_log .kill .dead, .game_log .kill .vote {
       padding-left: 6rem; }
     .game_log .kill .step {
       position: relative;

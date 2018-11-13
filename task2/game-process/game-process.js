@@ -6,13 +6,16 @@ var player_order1=sessionStorage.getItem("player_order");//获取玩家序号数
 var player_order=JSON.parse(player_order1);//JSON字符串转换为数组对象
 var playerLife = JSON.parse(sessionStorage.getItem("playerLife"));
 var playerLeft = killer + citizen;
-console.log(killer);
-console.log(citizen);
-console.log(playerLeft);
-console.log(player);
-console.log(player_order1);//此时显示的是字符串
-console.log(player_order);//数组
-console.log(playerLife);
+var killDead = JSON.parse(sessionStorage.getItem("killDead"));
+console.log(killDead);
+var voteDead = JSON.parse(sessionStorage.getItem("voteDead"));
+console.log(voteDead);
+console.log("剩余杀手：" + killer);
+console.log("剩余平民：" + citizen);
+console.log("剩余玩家：" + playerLeft);
+console.log("总玩家数：" + player);
+console.log("玩家身份：" + player_order);//数组
+console.log("玩家状态：" + playerLife);//数组
 
 function cancel() {
     if(confirm("确认退出该局游戏并回到游戏首页吗？")===true){
@@ -40,7 +43,7 @@ if (day === 0){
     day = 1;
 }//如果之前没有天数，则定为第一天
 sessionStorage.setItem("day",day);//储存第一天天数
-console.log(day);
+console.log("第" + day + "天");
 var dayArray=["一","二","三","四","五","六","七","八","九","十"];
 for(var i = 1;i<day;i++){
     var id = "#day" + (i+1);
@@ -107,7 +110,7 @@ var fsm = new StateMachine({//创建一个状态机实例，
 $(function () {
     if (sessionStorage.getItem("stateMachine")) {
         stateMachine = +sessionStorage.getItem("stateMachine");
-        console.log(stateMachine);
+        console.log("状态序列：" + stateMachine);
         //更改前几天的样式
         if (day > 1){
             var lastDay = day - 1;
@@ -142,6 +145,20 @@ $(function () {
                 fsm.deadSpeaking();
                 fsm.playerSpeaking();
                 break;
+        }
+    }
+    //添加被杀死玩家信息
+    if (sessionStorage.getItem("killDead")){
+        for (var i = 0;i<killDead.length;i++) {
+            var killTemp="#day" + (i+1) + " .dead";
+            $(killTemp).text(killDead[i]);
+        }
+    }
+    //添加被投死玩家信息
+    if (sessionStorage.getItem("voteDead")){
+        for (var i = 0;i<voteDead.length;i++) {
+            var voteTemp="#day" + (i+1) + " .vote";
+            $(voteTemp).text(voteDead[i]);
         }
     }
 })
