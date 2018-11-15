@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
     <link href="reset.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css"  href="task13-3-sass/common13-3.css" />
-    <link rel="stylesheet" type="text/css"  href="task13-3-sass/main13-3.css" />
+    <link rel="stylesheet" type="text/css"  href="result/result-common.css" />
+    <link rel="stylesheet" type="text/css"  href="result/result.css" />
     <title>游戏3</title>
 </head>
 
@@ -25,57 +25,31 @@
         <div class="data-p3">
             <span class="intro">剩余玩家： </span>
             <br>
-            <span class="intro">杀&emsp;手0人</span><span class="intro">警&emsp;察1人</span><span class="intro">平&emsp;民6人</span>
+            <span class="intro">杀&emsp;手<span class="killer-left"></span>人</span><span class="intro">平&emsp;民<span class="citizen-left"></span>人</span>
             <br>
-            <span class="intro">狙击手0人</span><span class="intro">医&emsp;生1人</span>
-            <br>
-            <span>卧底词汇：爱新觉罗 </span>
-            <br>
-            <span>水民词汇：努尔哈赤 </span>
         </div>
-    </div>
-    <div class="day-1">
-        <div class="day-box">
-            <span class="day-number">第1天</span><span class="time">0小时07分</span>
-        </div>
-        <div class="nightsun">
-            <div class="night">
-                晚上：5号被杀手杀死，5号是水民
+        <div id="day1" class="day-1">
+            <div class="day-box">
+                <span class="day-number">第1天</span>
             </div>
-            <div class="sun">
-                白天：8号被全民投票投死，8号是杀手
+            <div class="nightsun">
+                <div class="night">
+                    黑夜：<span class="night-infor"></span>
+                </div>
+                <div class="sun">
+                    白天：<span class="day-infor"></span>
+                </div>
             </div>
         </div>
     </div>
-    <div class="day-2">
-        <div class="day-box">
-            <span class="day-number">第2天</span><span class="time">0小时07分</span>
-        </div>
-        <div class="nightsun">
-            <div class="night">
-                晚上：5号被杀手杀死，5号是水民
-            </div>
-            <div class="sun">
-                白天：8号被全民投票投死，8号是杀手
-            </div>
-        </div>
-    </div>
-    <div class="bottom-p3">
-        <div class="bottom-p3-left">
-            第2天
-        </div>
-        <div class="bottom-p3-right">
-            0小时07分
-        </div>
-    </div>
+
     <div class="footer-p3">
         <div class="footer-p3-left">
             <a href="homepage.html" title="p1" target="blank" class="onemore">再来一局</a>
         </div>
-        <div class="footer-p3-right">
-            <a href="" title="" class="share">上传并分享</a>
-        </div>
     </div>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="result/result.js"></script>
 </body>
 
 </html>

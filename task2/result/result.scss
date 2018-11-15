@@ -1,0 +1,138 @@
+@charset "utf-8";
+@import "../var";
+@import "../mixin";
+body{
+  background-color: $deepblue-color;
+}
+.main-p3 {
+  background-color: $deepblue-color;
+  border-top: 1px $white-color solid;
+  margin-bottom: 8rem;
+  .empty1 {
+    padding-bottom: 2rem;
+  }
+  .winner {
+    background: rgb(95, 192, 205) url(../image/winner.png) no-repeat center center;
+    height: 19.2rem;
+    line-height: 30rem;
+    position: relative;
+    text-align: center;
+    font-size: 4.125rem;
+    color: $white-color;
+  }
+  .great{
+    background-color: $deepblue-color;
+    width: 80%;
+    font-size: 3.3rem;
+    line-height: 3.3rem;
+    color: $deepyellow-color;
+    margin-left: 10%;
+    margin-top: 2rem;
+  }
+  .data-p3 {
+    width: 80%;
+    font-size: 2.17rem;
+    line-height: 3rem;
+    color: $white-color;
+    margin-left: 10%;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+    .intro {
+      margin-right: 3rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-break: keep-all;
+    }
+  }
+  @media screen and (max-width: 640px){
+    .winner {
+      background-size: contain;
+      height: 10rem;
+      line-height: 16rem;
+      font-size: 2.3rem;
+    }
+    .great{
+      font-size: 1.65rem;
+      line-height: 2rem;
+    }
+    .data-p3 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-top: 2rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
+.day-1{
+  width: 95%;
+  margin: 0 auto;
+  background-color: $white-color;
+  border-bottom: 1px $dark-color solid;
+  .day-box {
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 1rem;
+    .day-number {
+      font-size: 3rem;
+      color: $dark-color;
+    }
+    .time {
+      float: right;
+      margin-top: 1rem;
+      margin-right: 2rem;
+      font-size: 2rem;
+      color: $grey-color;
+    }
+  }
+  .nightsun {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: $grey-color;
+  }
+  @media screen and (max-width: 640px){
+    .day-box {
+      padding-top: 0.5rem;
+      .day-number {
+        font-size: 1.5rem;
+      }
+      .time {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+      }
+    }
+    .nightsun {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+}
+.bottom-p3 {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  max-width:760px;
+  min-width:320px;
+  .bottom-p3-left{
+    @include day-time(left,0rem,1rem,3rem,$blue-color);
+    margin-left: 5%;
+  }
+  .bottom-p3-right{
+    @include day-time(right,0rem,1rem,3rem,$blue-color);
+    margin-right: 5%;
+  }
+  @media screen and (max-width: 640px){
+    .bottom-p3-left{
+      @include day-time(left,0rem,0.5rem,2rem,$blue-color);
+    }
+    .bottom-p3-right{
+      @include day-time(right,0rem,0.5rem,2rem,$blue-color);
+    }
+  }
+}
