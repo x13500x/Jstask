@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import "../var";
+@import "../mixin";
+body{
+  background-color: $blue-color;
+}
+.main-all{
+}
+.main-center{
+  width: 100%;
+  margin: 2rem auto 10rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .gamer {
+    width: 33.3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    .player{
+      display: inline-block;
+      border: 1vw solid $white-color;
+      text-align: center;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      .status {
+        font-size: $fontSize - 0.2;
+        color: $dark-color;
+        width: 24vw;
+        height: 20vw;
+        line-height: 20vw;
+        background-color: $yellow-color;
+      }
+      .number {
+        font-size: $fontSize - 0.3;
+        color: $white-color;
+        background-color: $deepblue-color;
+        width: 24vw;
+        height: 4vw;
+        line-height: 4vw;
+      }
+    }
+  }
+}
+.bottom{
+  background-color: $blue-color;
+  width: 100%;
+  height: 10rem;
+  position: fixed;
+  bottom: 0;
+}
+.start{
+  max-width: 640px;
+  width: 70%;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 3rem;
+  transform: scale(1,1);
+  margin:auto;
+  background-color: $yellow-color;
+  color: $white-color;
+  button{
+    font-size: 3rem;
+    color: $white-color;
+  }
+}

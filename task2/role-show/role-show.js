@@ -23,7 +23,7 @@ function back() {
     }
 }
 
-function plaer_box() {
+function player_box() {
     var main_center=document.getElementsByClassName("main-center")[0];
     for (var i=0;i<player_order.length;i++){
         var gamer=document.createElement("div");
@@ -44,7 +44,7 @@ function plaer_box() {
         gamer_box.style.height=gamer_box.offsetWidth+"px";
     }
 }
-plaer_box();
+player_box();
 function start_game() {
     window.location.href="game-process.html";
 }

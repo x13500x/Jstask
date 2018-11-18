@@ -16,13 +16,24 @@ console.log("剩余玩家：" + playerLeft);
 console.log("总玩家数：" + player);
 console.log("玩家身份：" + player_order);//数组
 console.log("玩家状态：" + playerLife);//数组
-
+//返回首页
 function cancel() {
     if(confirm("确认退出该局游戏并回到游戏首页吗？")===true){
         sessionStorage.clear();
         window.location.href="homepage.html";
     }
 }
+//结束本轮游戏
+$(".game_over_bt").click(function () {
+    if(confirm("确认结束本轮游戏吗？")===true){
+        sessionStorage.clear();
+        window.location.href="homepage.html";
+    }
+})
+//法官日志
+$(".diary_bt").click(function () {
+    window.location.href="judge-dairy.html";
+})
 //返回上一页
 function back() {
     if(confirm("确认返回上一页吗？")===true){

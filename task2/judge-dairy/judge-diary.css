@@ -1,0 +1,76 @@
+html {
+  font-size: 62.5%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto; }
+
+body {
+  background-color: #f0f0f0;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto; }
+
+body {
+  background-color: #29bde0; }
+
+.main-center {
+  width: 100%;
+  margin: 2rem auto 10rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  .main-center .gamer {
+    width: 33.3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem; }
+    .main-center .gamer .player {
+      display: inline-block;
+      border: 1vw solid #ffffff;
+      text-align: center;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+      .main-center .gamer .player .status {
+        font-size: 1.55rem;
+        color: #5d5d5d;
+        width: 24vw;
+        height: 20vw;
+        line-height: 20vw;
+        background-color: #fbb435; }
+      .main-center .gamer .player .number {
+        font-size: 1.45rem;
+        color: #ffffff;
+        background-color: #5fc0cd;
+        width: 24vw;
+        height: 4vw;
+        line-height: 4vw; }
+
+.bottom {
+  background-color: #29bde0;
+  width: 100%;
+  height: 10rem;
+  position: fixed;
+  bottom: 0; }
+
+.start {
+  max-width: 640px;
+  width: 70%;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 3rem;
+  transform: scale(1, 1);
+  margin: auto;
+  background-color: #fbb435;
+  color: #ffffff; }
+  .start button {
+    font-size: 3rem;
+    color: #ffffff; }
+
+/*# sourceMappingURL=judge-diary.css.map */

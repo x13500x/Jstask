@@ -35,56 +35,56 @@ body{
   font-size: $fontSize - 0.4;
 }
 .main-center{
-  width: 100%;
-  margin: 0 auto 10rem;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  .gamer {
-    width: 33.3%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0.5rem;
-    .player{
-      display: inline-block;
-      border: 1vw solid $white-color;
-      text-align: center;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      .status {
-        font-size: $fontSize - 0.2;
-        color: $dark-color;
-        width: 24vw;
-        height: 20vw;
-        line-height: 20vw;
-        background-color: $yellow-color;
-      }
-      .number {
-        font-size: $fontSize - 0.3;
-        color: $white-color;
-        background-color: $deepblue-color;
-        width: 24vw;
-        height: 4vw;
-        line-height: 4vw;
-      }
-    }
-    ul{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      visibility: hidden;
-      li{
-        background: url("image/knife.png");
-        width: 30px;
-        height: 30px;
-        margin-top: 0.3rem;
-      }
-    }
-  }
-}
+   width: 100%;
+   margin: 0 auto 10rem;
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   .gamer {
+     width: 33.3%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 0.5rem;
+     .player{
+       display: inline-block;
+       border: 1vw solid $white-color;
+       text-align: center;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+       .status {
+         font-size: $fontSize - 0.2;
+         color: $dark-color;
+         width: 24vw;
+         height: 20vw;
+         line-height: 20vw;
+         background-color: $yellow-color;
+       }
+       .number {
+         font-size: $fontSize - 0.3;
+         color: $white-color;
+         background-color: $deepblue-color;
+         width: 24vw;
+         height: 4vw;
+         line-height: 4vw;
+       }
+     }
+     ul{
+       display: flex;
+       justify-content: center;
+       width: 100%;
+       visibility: hidden;
+       li{
+         background: url("image/knife.png");
+         width: 30px;
+         height: 30px;
+         margin-top: 0.3rem;
+       }
+     }
+   }
+ }
 .bottom{
   background-color: $blue-color;
   width: 100%;

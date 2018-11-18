@@ -39,4 +39,8 @@ for (i=0;i<day;i++){
     $(daynightTemp).text(killDead[i]);
     $(daysunTemp).text(voteDead[i]);
 }
+$(".onemore").click(function () {
+    sessionStorage.clear();
+    window.location.href="role-assign.html";
+})
 
