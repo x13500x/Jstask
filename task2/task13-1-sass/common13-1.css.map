@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAGA,OAAQ;EACN,QAAQ,EAAC,QAAQ;EACjB,gBAAgB,ECAF,OAAiB;EDC/B,QAAQ,EAAE,MAAM;EAChB,MAAM,EAAE,MAAM;EACd,MAAM,EAAE,MAAM;EACd,oCAAoC;IANtC,OAAQ;MAOJ,MAAM,EAAE,MAAM",
-"sources": ["common13-1.scss","../_var.scss"],
-"names": [],
-"file": "common13-1.css"
-}
