@@ -17,6 +17,10 @@ console.log("总玩家数：" + player);
 console.log("玩家身份：" + player_order);//数组
 console.log("玩家状态：" + playerLife);//数组
 
+$(".button-p3-1").click(function () {
+    sessionStorage.clear();
+    window.location.href="homepage.html";
+})
 $(".killer-left").text(killer);
 $(".citizen-left").text(citizen);
 
@@ -38,7 +42,7 @@ for (i=0;i<day;i++){
     var daysunTemp = "#day" + u +" .day-infor";
     $(daynightTemp).text(killDead[i]);
     $(daysunTemp).text(voteDead[i]);
-}
+}//添加每天发生的事情
 $(".onemore").click(function () {
     sessionStorage.clear();
     window.location.href="role-assign.html";
