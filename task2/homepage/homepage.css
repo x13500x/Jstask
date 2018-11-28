@@ -1,18 +1,23 @@
 html {
   font-size: 62.5%;
-  max-width: 640px;
+  max-width: 780px;
   min-width: 320px;
   margin: 0 auto; }
 
 body {
-  background-color: #f0f0f0;
-  max-width: 640px;
+  max-width: 780px;
   min-width: 320px;
+  height: 100vh;
+  width: 100vw;
   margin: 0 auto; }
 
 .max {
   position: relative;
   overflow: hidden; }
+
+.main-all {
+  height: 100vh;
+  background-color: #f0f0f0; }
 
 .header .button1 {
   background: url(../image/2.png);
@@ -36,7 +41,6 @@ body {
       left: 1rem; } }
 
 .main {
-  background-color: #f0f0f0;
   padding-bottom: 2rem;
   padding-top: 1.75rem; }
   .main .box1 {

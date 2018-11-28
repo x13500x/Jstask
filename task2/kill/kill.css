@@ -1,24 +1,29 @@
 html {
   font-size: 62.5%;
-  max-width: 640px;
+  max-width: 780px;
   min-width: 320px;
   margin: 0 auto; }
 
 body {
-  background-color: #f0f0f0;
-  max-width: 640px;
+  max-width: 780px;
   min-width: 320px;
+  height: 100vh;
+  width: 100vw;
   margin: 0 auto; }
 
 body {
-  background-color: #29bde0;
   font-size: 1.45rem; }
+
+.main-all {
+  height: 100%;
+  background-color: #29bde0; }
 
 .open-eyes {
   width: 100%;
   height: 3rem;
   line-height: 3rem;
   background-color: #5fc0cd;
+  margin-top: 2rem;
   padding-left: 2rem;
   position: relative; }
   .open-eyes::after {
@@ -47,7 +52,8 @@ body {
   margin: 0 auto 10rem;
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background-color: #29bde0; }
   .main-center .gamer {
     width: 33.3%;
     display: flex;
@@ -76,6 +82,17 @@ body {
         width: 24vw;
         height: 4vw;
         line-height: 4vw; }
+      @media screen and (min-width: 780px) {
+        .main-center .gamer .player {
+          border: 8px solid #ffffff; }
+          .main-center .gamer .player .status {
+            width: 188px;
+            height: 156px;
+            line-height: 156px; }
+          .main-center .gamer .player .number {
+            width: 188px;
+            height: 32px;
+            line-height: 32px; } }
     .main-center .gamer ul {
       display: flex;
       justify-content: center;
@@ -88,11 +105,16 @@ body {
         margin-top: 0.3rem; }
 
 .bottom {
-  background-color: #29bde0;
-  width: 100%;
+  max-width: 780px;
+  transform: scale(1, 1);
+  margin: auto;
   height: 10rem;
+  width: 100%;
+  background-color: #29bde0;
   position: fixed;
-  bottom: 0; }
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 .ok {
   max-width: 640px;

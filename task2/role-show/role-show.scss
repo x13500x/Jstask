@@ -1,56 +1,76 @@
 @charset "utf-8";
 @import "../var";
 @import "../mixin";
-body{
-  background-color: $blue-color;
-}
 .main-all{
-}
+   background-color: $blue-color;
+  box-sizing: border-box ;
+  height: 100%;
+ }
 .main-center{
-  width: 92%;
-  margin: 0 auto 10rem;
+  background-color: #29bde0;
+  max-width: 780px;
+  width: 100%;
+  margin: 2rem auto 10rem;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   .gamer {
-    width: 28%;
-    margin-top: 3rem;
-    margin-right: 2.66%;
-    margin-left: 2.66%;
-    border: 0.3rem $white-color solid;
-    background-color: $yellow-color;
-    position: relative;
-    height: 0;
-    .status {
-      font-size: $fontSize;
-      color: $dark-color;
-      position: absolute;
-      top: 45%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .number {
-      font-size: $fontSize - 0.3;
-      color: $white-color;
-      background-color: $deepblue-color;
+    width: 33.3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    .player{
+      display: inline-block;
+      border: 1vw solid $white-color;
       text-align: center;
-      height: 1.5rem;
-      line-height: 1.5rem;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      .status {
+        font-size: $fontSize - 0.2;
+        color: $dark-color;
+        width: 24vw;
+        height: 20vw;
+        line-height: 20vw;
+        background-color: $yellow-color;
+      }
+      .number {
+        font-size: $fontSize - 0.3;
+        color: $white-color;
+        background-color: $deepblue-color;
+        width: 24vw;
+        height: 4vw;
+        line-height: 4vw;
+      }
+      @media screen and (min-width: 780px){
+        border: 8px solid $white-color;
+        .status{
+          width: 188px;
+          height: 156px;
+          line-height: 156px;
+        }
+        .number{
+          width: 188px;
+          height: 32px;
+          line-height: 32px;
+        }
+      }
     }
   }
 }
 .bottom{
-  background-color: $blue-color;
-  width: 100%;
-  height: 10rem;
-  position: fixed;
-  bottom: 0;
+  max-width: 780px;
+  transform: scale(1,1);
+  margin:auto;
+    height: 10rem;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: $blue-color;
+    position: fixed;
+    bottom: 0;
 }
 .start{
   max-width: 640px;
@@ -61,7 +81,7 @@ body{
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 3rem;
+  bottom: 2.5rem;
   transform: scale(1,1);
   margin:auto;
   background-color: $yellow-color;

@@ -2,14 +2,18 @@
 @import "../var";
 @import "../mixin";
 body{
-  background-color: $blue-color;
   font-size: $fontSize - 0.3;
+}
+.main-all{
+  height: 100%;
+  background-color: $blue-color;
 }
 .open-eyes{
   width: 100%;
   height: 3rem;
   line-height: 3rem;
   background-color: #5fc0cd;
+  margin-top: 2rem;
   padding-left: 2rem;
   position: relative;
   &::after{
@@ -40,6 +44,7 @@ body{
    display: flex;
    justify-content: flex-start;
    flex-wrap: wrap;
+  background-color: #29bde0;
    .gamer {
      width: 33.3%;
      display: flex;
@@ -70,6 +75,19 @@ body{
          height: 4vw;
          line-height: 4vw;
        }
+       @media screen and (min-width: 780px){
+         border: 8px solid $white-color;
+         .status{
+           width: 188px;
+           height: 156px;
+           line-height: 156px;
+         }
+         .number{
+           width: 188px;
+           height: 32px;
+           line-height: 32px;
+         }
+       }
      }
      ul{
        display: flex;
@@ -86,11 +104,16 @@ body{
    }
  }
 .bottom{
-  background-color: $blue-color;
-  width: 100%;
+  max-width: 780px;
+  transform: scale(1,1);
+  margin:auto;
   height: 10rem;
+  width: 100%;
+  background-color: $blue-color;
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
 }
 .ok{
   max-width: 640px;

@@ -1,22 +1,24 @@
 html {
   font-size: 62.5%;
-  max-width: 640px;
+  max-width: 780px;
   min-width: 320px;
   margin: 0 auto; }
 
 body {
-  background-color: #f0f0f0;
-  max-width: 640px;
+  max-width: 780px;
   min-width: 320px;
+  height: 100vh;
+  width: 100vw;
   margin: 0 auto; }
 
-body {
+.main-all {
+  height: 100%;
   background-color: #5fc0cd; }
 
 .main-p3 {
   background-color: #5fc0cd;
   border-top: 1px #ffffff solid;
-  margin-bottom: 8rem; }
+  margin-bottom: 7.5rem; }
   .main-p3 .empty1 {
     padding-bottom: 2rem; }
   .main-p3 .winner {
@@ -50,19 +52,21 @@ body {
       white-space: nowrap;
       word-break: keep-all; }
   @media screen and (max-width: 640px) {
-    .main-p3 .winner {
-      background-size: contain;
-      height: 10rem;
-      line-height: 16rem;
-      font-size: 2.3rem; }
-    .main-p3 .great {
-      font-size: 1.65rem;
-      line-height: 2rem; }
-    .main-p3 .data-p3 {
-      font-size: 1.5rem;
-      line-height: 2rem;
-      margin-top: 2rem;
-      padding-bottom: 1rem; } }
+    .main-p3 {
+      margin-bottom: 6rem; }
+      .main-p3 .winner {
+        background-size: contain;
+        height: 10rem;
+        line-height: 16rem;
+        font-size: 2.3rem; }
+      .main-p3 .great {
+        font-size: 1.65rem;
+        line-height: 2rem; }
+      .main-p3 .data-p3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 2rem;
+        padding-bottom: 1rem; } }
 
 .day-1 {
   width: 95%;
@@ -108,7 +112,7 @@ body {
   width: 100%;
   position: fixed;
   bottom: 0;
-  max-width: 760px;
+  max-width: 780px;
   min-width: 320px; }
   .bottom-p3 .bottom-p3-left {
     float: left;

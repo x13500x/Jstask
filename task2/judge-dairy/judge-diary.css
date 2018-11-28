@@ -1,13 +1,14 @@
 html {
   font-size: 62.5%;
-  max-width: 640px;
+  max-width: 780px;
   min-width: 320px;
   margin: 0 auto; }
 
 body {
-  background-color: #f0f0f0;
-  max-width: 640px;
+  max-width: 780px;
   min-width: 320px;
+  height: 100vh;
+  width: 100vw;
   margin: 0 auto; }
 
 body {
@@ -47,6 +48,17 @@ body {
         width: 24vw;
         height: 4vw;
         line-height: 4vw; }
+      @media screen and (min-width: 780px) {
+        .main-center .gamer .player {
+          border: 8px solid #ffffff; }
+          .main-center .gamer .player .status {
+            width: 188px;
+            height: 156px;
+            line-height: 156px; }
+          .main-center .gamer .player .number {
+            width: 188px;
+            height: 32px;
+            line-height: 32px; } }
 
 .bottom {
   background-color: #29bde0;

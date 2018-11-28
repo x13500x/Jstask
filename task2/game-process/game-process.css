@@ -1,14 +1,19 @@
 html {
   font-size: 62.5%;
-  max-width: 640px;
+  max-width: 780px;
   min-width: 320px;
   margin: 0 auto; }
 
 body {
-  background-color: #f0f0f0;
-  max-width: 640px;
+  max-width: 780px;
   min-width: 320px;
+  height: 100vh;
+  width: 100vw;
   margin: 0 auto; }
+
+.main-all {
+  height: 100vh;
+  background-color: #f0f0f0; }
 
 .main-center {
   margin-bottom: 6rem;
@@ -100,7 +105,7 @@ body {
 
 .bottom {
   background-color: #29bde0;
-  max-width: 640px;
+  max-width: 780px;
   width: 100%;
   margin: 0 auto;
   height: 5rem;
@@ -109,7 +114,7 @@ body {
   display: flex;
   justify-content: space-around; }
   .bottom div {
-    max-width: 640px;
+    max-width: 780px;
     width: 35%;
     height: 3rem;
     line-height: 2.5rem;

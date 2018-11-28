@@ -1,23 +1,25 @@
 html {
   font-size: 62.5%;
-  max-width: 640px;
+  max-width: 780px;
   min-width: 320px;
   margin: 0 auto; }
 
 body {
-  background-color: #f0f0f0;
-  max-width: 640px;
+  max-width: 780px;
   min-width: 320px;
+  height: 100vh;
+  width: 100vw;
   margin: 0 auto; }
 
-body {
+.main-all {
+  height: 100vh;
   background-color: #29bde0; }
 
 .main .open {
   position: relative;
   background-color: #ffedc5;
   width: 70%;
-  height: 37rem;
+  height: 60vh;
   margin: 3rem auto 2rem;
   border: 4px solid #ffffff;
   text-align: center; }
@@ -39,7 +41,7 @@ body {
     z-index: 9999; }
   .main .open .open-top {
     display: none;
-    margin-top: 4rem;
+    margin-top: 6rem;
     font-size: 1.75rem;
     color: #29bde0; }
     .main .open .open-top img {
@@ -48,7 +50,8 @@ body {
       margin: 2rem auto; }
   .main .open .open-bottom {
     display: block;
-    margin-top: 6rem; }
+    margin-top: 6rem;
+    margin-bottom: 6rem; }
     .main .open .open-bottom .open0 {
       width: 80%; }
 .main .check {
@@ -66,7 +69,7 @@ body {
   background-color: #fbb435;
   color: #ffffff; }
   .main .check button {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #ffffff; }
 
-/*# sourceMappingURL=main2-1-2.css.map */
+/*# sourceMappingURL=role-comfirm.css.map */

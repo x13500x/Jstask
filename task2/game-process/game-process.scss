@@ -2,6 +2,10 @@
 @import "../var";
 @import "../mixin";
 
+.main-all{
+  height: 100vh;
+  background-color: #f0f0f0;
+}
 .main-center{
   margin-bottom: 6rem;
   font-size: $fontSize - 0.2;
@@ -98,7 +102,7 @@
 }
 .bottom{
   background-color: $blue-color;
-  max-width: 640px;
+  max-width: 780px;
   width: 100%;
   margin: 0 auto;
   height: 5rem;
@@ -107,7 +111,7 @@
   display: flex;
   justify-content: space-around;
   div{
-    max-width: 640px;
+    max-width: 780px;
     width: 35%;
     height: 3rem;
     line-height: 2.5rem;

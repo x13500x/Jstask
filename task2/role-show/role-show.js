@@ -22,29 +22,16 @@ function back() {
         window.history.go(-1);
     }
 }
-
-function player_box() {
-    var main_center=document.getElementsByClassName("main-center")[0];
+$(function () {
+    for (var i=2;i<=player_order.length;i++){
+        $("#role1").clone().attr("id","role"+ i).appendTo("div.main-center")
+    }//克隆玩家
     for (var i=0;i<player_order.length;i++){
-        var gamer=document.createElement("div");
-        gamer.className="gamer";
-        var status=document.createElement("div");
-        status.className="status";
-        var status_text=document.createTextNode(player_order[i]);
-        var number=document.createElement("div");
-        number.className="number";
-        var num=i+1;
-        var number_text=document.createTextNode(num+"号");
-        number.appendChild(number_text);
-        status.appendChild(status_text);
-        gamer.appendChild(status);
-        gamer.appendChild(number);
-        main_center.appendChild(gamer);
-        var gamer_box=document.getElementsByClassName("gamer")[i];
-        gamer_box.style.height=gamer_box.offsetWidth+"px";
-    }
-}
-player_box();
+        var id="#role" + (i+1);
+        $(id).find("p.number").text((i+1)+"号");//修改玩家序号
+        $(id).find("p.status").text(player_order[i]);//修改玩家身份
+    }//修改玩家信息
+})
 function start_game() {
     window.location.href="game-process.html";
 }
