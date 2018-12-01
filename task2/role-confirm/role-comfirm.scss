@@ -30,23 +30,38 @@
       z-index: 9999;
     }
     .open-top{
+      width: 90%;
       display: none;
-      margin-top: 6rem;
+      position:absolute;
+      top:50%;
+      left:50%;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
       font-size: $fontSize;
       color: $blue-color;
       img{
-        width: 50%;
+        width: 60%;
+        max-width: 260px;
       }
       p{
-        margin: 2rem auto;
+        margin: 1.5rem auto;
       }
     }
     .open-bottom{
+      width: 85%;
       display: block;
-      margin-top: 6rem;
-      margin-bottom: 6rem;
+      position:absolute;
+      top:50%;
+      left:50%;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
       .open0{
         width: 80%;
+        max-width: 315px;
       }
     }
   }

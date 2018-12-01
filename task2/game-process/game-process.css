@@ -27,7 +27,8 @@ body {
   background-color: #ffffff;
   text-align: center;
   margin: 1rem auto;
-  border: 1px solid #c9c9c9; }
+  border: 1px solid #c9c9c9;
+  cursor: pointer; }
 
 .game_log {
   position: relative;
@@ -85,7 +86,8 @@ body {
         align-items: center; }
       .game_log .kill .step .step0 {
         background-color: #5fc0cd;
-        position: relative; }
+        position: relative;
+        cursor: pointer; }
         .game_log .kill .step .step0 .tri {
           position: absolute;
           width: 0;

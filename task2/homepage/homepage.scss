@@ -1,12 +1,17 @@
 @charset "utf-8";
 @import "../var";
 @import "../mixin";
+@media screen and (max-width: 640px){
+  body{
+    background-color: $greywhite-color;
+  }
+}
 .max{
   position: relative;
   overflow: hidden;
 }
 .main-all{
-  height: 100vh;
+  height: 100%;
   background-color: $greywhite-color;
 }
 .header{

@@ -19,6 +19,7 @@
   text-align: center;
   margin: 1rem auto;
   border: 1px solid $border-color;
+  cursor: pointer;
 }
 .game_log{
   position: relative;
@@ -79,6 +80,7 @@
         .step0{
           background-color: $deepblue-color;
           position: relative;
+          cursor: pointer;
           .tri{
             position: absolute;
             width: 0;
