@@ -92,11 +92,11 @@ body {
           position: absolute;
           width: 0;
           height: 0;
-          border-top: 8px dashed #ffffff;
-          border-bottom: 8px dashed #ffffff;
-          border-right: 16px solid #5fc0cd;
-          top: 7px;
-          left: -16px;
+          border-top: 0.6rem dashed #ffffff;
+          border-bottom: 0.6rem dashed #ffffff;
+          border-right: 1.2rem solid #5fc0cd;
+          top: 0.65rem;
+          left: -1.2rem;
           margin: 0; }
 
 .moon {

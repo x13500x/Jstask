@@ -85,11 +85,11 @@
             position: absolute;
             width: 0;
             height: 0;
-            border-top: 8px dashed $white-color;
-            border-bottom: 8px dashed $white-color;
-            border-right: 16px solid $deepblue-color;
-            top:7px;
-            left: -16px;
+            border-top: 0.6rem dashed $white-color;
+            border-bottom: 0.6rem dashed $white-color;
+            border-right: 1.2rem solid $deepblue-color;
+            top:0.65rem;
+            left: -1.2rem;
             margin: 0;
           }
         }

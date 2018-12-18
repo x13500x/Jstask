@@ -183,6 +183,7 @@ $(eventsTemp).eq(0).on("click",function () {
         window.location.href = "kill.html";
     }
     fsm.killing();
+    console.log("状态序列：" + stateMachine);
 });
 //绑定发表遗言事件
 $(eventsTemp).eq(1).on("click",function () {
@@ -194,6 +195,7 @@ $(eventsTemp).eq(1).on("click",function () {
         $(this).children().css("border-right-color","green");
     }
     fsm.deadSpeaking();
+    console.log("状态序列：" + stateMachine);
 });
 //绑定玩家发言事件
 $(eventsTemp).eq(2).on("click",function () {
@@ -205,6 +207,7 @@ $(eventsTemp).eq(2).on("click",function () {
         $(this).children().css("border-right-color","green");
     }
     fsm.playerSpeaking();
+    console.log("状态序列：" + stateMachine);
 });
 //绑定投票事件
 $(eventsTemp).eq(3).on("click",function () {
@@ -214,4 +217,5 @@ $(eventsTemp).eq(3).on("click",function () {
         window.location.href = "vote.html";
     }
     fsm.voting();
+    console.log("状态序列：" + stateMachine);
 });
