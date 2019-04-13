@@ -21,6 +21,12 @@ $(".button-p3-1").click(function () {
     sessionStorage.clear();
     window.location.href="homepage.html";
 })
+if(killer==citizen){
+    $(".winner2").text("杀手胜利");
+}
+else {
+    $(".winner2").text("平民胜利");
+}
 $(".killer-left").text(killer);
 $(".citizen-left").text(citizen);
 
@@ -36,10 +42,10 @@ for(var i = 1;i<day;i++){
     $(id).find("span.day-number").text("第"+(i+1)+"天");//更改相应的天数
 }//首天不执行，day=2时开始执行
 
-for (i=0;i<day;i++){
-    var u = i+1;
-    var daynightTemp = "#day" + u +" .night-infor";
-    var daysunTemp = "#day" + u +" .day-infor";
+for (i=0;i<day;i++) {
+    var u = i + 1;
+    var daynightTemp = "#day" + u + " .night-infor";
+    var daysunTemp = "#day" + u + " .day-infor";
     $(daynightTemp).text(killDead[i]);
     $(daysunTemp).text(voteDead[i]);
 }//添加每天发生的事情

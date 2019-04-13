@@ -31,7 +31,7 @@ $(function () {
         $(id).find("p.number").text((i+1)+"号");//修改玩家序号
         $(id).find("p.status").text(player_order[i]);//修改玩家身份
     }//修改玩家信息
-})
+});
 function start_game() {
     window.location.href="game-process.html";
 }
