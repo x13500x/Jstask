@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>vue入门</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+<div id="root">
+    <div @click="handleClick">{{msg}}</div>
+    <div :title="title">hello world</div>
+    <input v-model="content"/>
+    <div>{{content}}</div>
+    姓： <input v-model="firstName"/>
+    <br>
+    名： <input v-model="lastName"/>
+    <div>{{fullName}}</div>
+    <div>{{count}}</div>
+    <div v-show="show">show and hidden</div>
+    <button @click="isShow">toggle</button>
+    <ul>
+        <li v-for="item of list" :key="item">{{item}}</li>
+    </ul>
+
+</div>
+<script>
+    new Vue({
+        el: "#root",
+        data: {
+            msg: "hello",
+            title: "this is hello world",
+            content: "this is content",
+            firstName: "",
+            lastName: "",
+            count: "",
+            show: true,
+            list: [1, 2, 3]
+        },
+        methods: {
+            handleClick: function () {
+                this.msg = "world"
+            },
+            isShow: function () {
+                this.show = !this.show
+            }
+        },
+        computed: {
+            fullName: function () {
+                return this.firstName + ' ' + this.lastName
+            }
+        },
+        watch: {
+            fullName: function () {
+                this.count++
+            }
+        }
+    })
+</script>
+</body>
+</html>
